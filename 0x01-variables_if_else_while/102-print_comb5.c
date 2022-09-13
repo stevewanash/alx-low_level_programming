@@ -22,7 +22,7 @@ int main(void)
 			{
 				for (m = 0; m < 10; m++)
 				{
-					if (l + m <= k + j || (l + m == k + j && j == l) || (l + m == k + j && l < j))
+					if (l + m < k + j || (l + m == k + j && j == l) || (l + m == k + j && l < j))
 					{
 						continue;
 					}
