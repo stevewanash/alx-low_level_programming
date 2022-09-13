@@ -1,27 +1,26 @@
-#include <stdio.h>
-/* more headers goes there */
+# include <stdio.h>
 
 /**
- * main - prints out all the alphabet
- * letters in small case
+ * main - prints all possible combinations
+ * of one digit numbers
  * no parameters
  *
- *Return: 0 denotes the end of the function
+ * Return: 0 denotes the end of the
+ * function
  */
 int main(void)
 {
-
-	int c;
-	for (c = 0; c < 10; c++)
+	int j;
+	for (j = 0; j < 10; j++)
 	{
-		putchar(c + '0');
-		if (c == 9)
+		putchar(j + '0');
+		if (j == 9)
 		{
 			putchar('\n');
 			break;
 		}
 		putchar(',');
 		putchar(' ');
-	}
+	}				
 	return (0);
 }
