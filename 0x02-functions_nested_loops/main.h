@@ -6,5 +6,12 @@
  */
 int put_char(void)
 {
-	printf("_putchar\n");
+	int n;
+	char result[] = "_putchar";
+	for (n = 0; n < 8; n++)
+	{
+		putchar(result[n]);
+	}
+	putchar('\n');
+	return (0);
 }
