@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * put_char - prints the function _putchar
  * no arguments
