@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include <ctype.h>
 
 /**
  * print_alphabet_x10 - checks for lowercase
