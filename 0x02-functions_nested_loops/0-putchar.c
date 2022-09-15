@@ -1,19 +1,21 @@
-#include <stdio.h>
-
+# include <stdio.h>
+# include "main.h"
+                                                                                                                            
 /**                                                                                                                         
- * put_char - prints the function _putchar                                                                                  
- * no arguments                                                                                                             
+ * main - prints "_putchar"                                                                                          
+ * no parameters                                                                                                         
+ *                                                                                  
  *                                                                                                                          
- * Return: 0 always                                                                                                         
+ * Return: zero always
+ * 
+ * 
  */                                                                                                                         
-int put_char(void)                                                                                                          
-{                                                                                                                           
-        int n;                                                                                                              
-        char result[] = "_putchar";                                                                                         
-        for (n = 0; n < 8; n++)                                                                                             
-        {                                                                                                                   
-                putchar(result[n]);                                                                                         
-        }                                                                                                                   
-        putchar('\n');                                                                                                      
-        return (0);                                                                                                         
+                                                                                                                            
+int main()
+{
+	char r[] = "_putchar";
+	int m;
+	for (m = 0; m < 8; m++)
+		_putchar(r[m]);
+	return (0);
 }
