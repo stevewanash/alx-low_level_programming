@@ -18,7 +18,7 @@ int main()
 	for (m = 0; m < 8; m++)
 	{
 		_putchar(r[m]);
-		_putchar('\n');
 	}
+	_putchar('\n');
 	return (0);
 }
