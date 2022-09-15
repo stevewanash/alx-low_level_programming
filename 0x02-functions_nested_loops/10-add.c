@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**                                                                                                                         
- * put_char - adds two integers                                                                                 
+ * add - adds two integers                                                                                 
  * @a: first number
  * @b: second number
  *
