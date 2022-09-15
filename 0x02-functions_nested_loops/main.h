@@ -5,3 +5,4 @@ int _islower(int c);
 int _abs(int a);
 void jack_bauer(void);
 void times_table(void);
+int add(int a, int b);
