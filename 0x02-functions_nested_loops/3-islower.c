@@ -1,8 +1,7 @@
-# include <stdio.h>                                                                                                         
-# include <ctype.h>                                                                                                         
+# include <stdio.h>                                                                                                                                                                                                                  
                                                                                                                             
 /**                                                                                                                         
- * _islower - checks for lowercase                                                                                
+ * _islower - checks for lowercase                                                                                          
  * characters                                                                                                               
  * @c: is the input to be checked for case                                                                                  
  *                                                                                                                          
@@ -10,7 +9,9 @@
  * 0 otherwise                                                                                                              
  */                                                                                                                         
                                                                                                                             
-int _islower(int c)                                                                                                         
-{                                                                                                                           
-        return (islower(c + '0'));                                                                                                
+int _islower(int c)
+{
+	if(c >= 97 && c <= 122)
+		return (1);
+	return (0);
 }
