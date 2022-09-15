@@ -1,3 +1,5 @@
+# include <stdio.h>
+
 /**
  * print_alphabet - prints the alphabet
  * in lower case
@@ -7,7 +9,7 @@
 void print_alphabet(void)
 {
 	char alphabet;
-	for (alphabet = 'a'; alphabet <= 'z'; alhabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 		putchar(alphabet);
 	}

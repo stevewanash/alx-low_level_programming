@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * put_char - prints the function _putchar
  * no arguments
@@ -25,7 +27,7 @@ int put_char(void)
 void print_alphabet(void)
 {
 	char alphabet;
-	for (alphabet = 'a'; alphabet <= 'z'; alhabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 		putchar(alphabet);
 	}
