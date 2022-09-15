@@ -1,7 +1,7 @@
 # include <stdio.h>
 
 /**
- * print_alphabet - prints the alphabet
+ * print_alphabet_x10 - prints the alphabet
  * in lower case 10 times
  * no arguments
  *
