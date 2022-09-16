@@ -26,12 +26,12 @@ void print_times_table(int n)
                                 printf("%d\n", i * j);                                                                      
                                 continue;                                                                                   
                         }                                                                                                   
-                        if (i * (j + 1) > 9)                                                                                
+                        if ((j + 1)%10 > 0 && (j + 1)%100 !> 0)                                                                                
                         {                                                                                                   
                             printf("%d,  ", i * j);                                                                          
                             continue;                                                                                       
                         }
-			if (i * (j + 1) > 99)                                                                                
+			if ((j + 1)%100 > 0)                                                                                
                         {                                                                                                   
                             printf("%d, ", i * j);                                                                          
                             continue;                                                                                       
