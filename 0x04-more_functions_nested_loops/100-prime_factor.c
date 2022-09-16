@@ -1,14 +1,5 @@
 #include <stdio.h>
 
-
-/**
- * prime - determines if a number is a prime
- * number
- * @n: the number to be tested
- *
- * Return: 1 if prime
- * 0 if not prime
- */
 /*int prime(int n)
 {
 	int i;
@@ -29,11 +20,10 @@
  */
 int main(void)
 {
-	//long long int i = 612852475143;
 	long long int i = 612852475143;
 	long long int j = 2;
-	int res;
-	/*while (j <= i/2)
+	/*int res;
+	while (j <= i/2)
 	{*/
 	i = 612852475143 / 3;
 	i = 204284158381 / 4019;
