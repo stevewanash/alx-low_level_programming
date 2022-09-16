@@ -10,6 +10,6 @@ int main(void)
 	long long int i = 612852475143;
 	i = 612852475143 / 3;
 	i = 204284158381 / 4019;
-	printf("%lld", i);
+	printf("%lld\n", i);
 	return (0);
 }
