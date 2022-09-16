@@ -2,22 +2,21 @@
 # include "main.h"
 
 /**                                                                                                                         
- * print_diagonal - prints square using "#"                                                                                                                                                                                             
+ * print_square - prints square using "#"                                                                                                                                                                                             
  *
- * @n: size of square "#" should print
+ * @size: size of square "#" should print
  *
  * Return: none                                                                                                        
  */                                                                                                                         
                                                                                                                             
-void print_diagonal(int n)                                                                                                         
+void print_square(int size)                                                                                                         
 {       
 	int c;
 	int d;
-	for (c = 1; c <= n; c++)
+	for (c = 1; c <= size; c++)
 	{
-		_putchar('\\');
+		for (d = 1; d <= size; d++)
+			_putchar('#');
 		_putchar('\n');
-		for (d = 0; d < c; d++)
-			_putchar(' ');
 	}
 }
