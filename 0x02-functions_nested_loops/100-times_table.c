@@ -21,7 +21,7 @@ void print_times_table(int n)
 		}
                 for (j = 0; j < n; j++)                                                                                    
                 { 
-                        if (j == n)                                                                                         
+                        if (j == n - 1)                                                                                         
                         {
                                 printf("%d\n", i * j);                                                                      
                                 continue;                                                                                   
