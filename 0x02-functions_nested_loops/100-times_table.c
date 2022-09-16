@@ -1,9 +1,9 @@
 # include <stdio.h>                                                                                                         
                                                                                                                             
 /**                                                                                                                         
- * times_table - mutliplication table                                                                                       
+ * print_times_table - mutliplication table                                                                                       
  *                                                                                                                          
- * no parameters                                                                                                            
+ * @n: input                                                                                                            
  *                                                                                                                          
  *                                                                                                                          
  *                                                                                                                          
@@ -22,17 +22,22 @@ void print_times_table(int n)
 				printf("\n");
 				break;
 			}
-                        if (j == 9)                                                                                         
+                        if (j == n)                                                                                         
                         {
                                 printf("%d\n", i * j);                                                                      
                                 continue;                                                                                   
                         }                                                                                                   
                         if (i * (j + 1) > 9)                                                                                
                         {                                                                                                   
+                            printf("%d,  ", i * j);                                                                          
+                            continue;                                                                                       
+                        }
+			if (i * (j + 1) > 99)                                                                                
+                        {                                                                                                   
                             printf("%d, ", i * j);                                                                          
                             continue;                                                                                       
-                        }                                                                                                   
-                        printf("%d,  ", i * j);                                                                             
+                        }   
+                        printf("%d,   ", i * j);                                                                             
                 }                                                                                                           
         }                                                                                                                   
 }
