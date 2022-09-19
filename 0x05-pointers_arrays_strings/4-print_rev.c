@@ -14,18 +14,15 @@ void print_rev(char *s)
 	int a = 0;
 
 	while (s[a] != '\0')
-	{
 
 		a++;
-
-	}
 
 	a -= 1;
 
 	while (s[a] >= 0)
 	{
 
-		putchar(str[a]);
+		putchar(s[a]);
 
 		a--;
 
