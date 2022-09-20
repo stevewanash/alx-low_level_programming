@@ -18,6 +18,10 @@ void print_array(int *a, int n)
 	while (b < n)
 	{
 
+		if (n <= 0)
+
+			break;
+
 		if (b + 1 == n)
 		{
 
