@@ -18,8 +18,11 @@ char *_strcpy(char *dest, char *src)
 	int c = 0;
 
 	while (src[b] != '\0')
-	
+	{
+
 		b++;
+
+	}
 
 	while (c <= b)
 	{
