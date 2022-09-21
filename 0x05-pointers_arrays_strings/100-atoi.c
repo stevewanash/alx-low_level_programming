@@ -7,7 +7,7 @@
  * Return: value of integer
  */
  
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	int sign = 1, number = 0, index = 0, n = 0;
 	while (!(s[n] >= '0' && s[n] <= '9'))
