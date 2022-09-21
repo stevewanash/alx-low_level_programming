@@ -9,15 +9,17 @@
  
 int _atoi(char *s)
 {
-	int sign = 1, number = 0, n = 0;
-	while (!(s[n] >= '0' && s[n] <= '9'))
+	signed int sign = 1, number = 0, n = 0;
+	while (!(s[n] >= '0' && s[n] <= '9') && s[n] != '\0')
 	{
 		n++;
 	}
+
 	if(s[n - 1] == '-')
 	{
 		sign = -1;
 	}
+
 	while(s[n] != '\0')
 	{
 		if(s[n] >= '0' && s[n] <= '9')
@@ -32,5 +34,13 @@ int _atoi(char *s)
 	}
 		
 	number = number * sign;
-	return (number);
+	
+    	if (sign * number > 2147483647)
+	{
+	    
+		return ((2147483640 + (sign * number % 10)) * sign);
+	    
+	}
+	else
+		return (number);
 }
