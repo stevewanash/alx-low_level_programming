@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**                                                                                                                       
+/**
  * cap_string - converts string to uppercase
  * @a: string to be converted to uppercase
  *
@@ -8,7 +8,7 @@
  */
 char *cap_string(char *a)
 {
-     	int c = 0;                                                                                                        
+     	int c = 0;  
         while (a[c] != '\0')                                                                                              
         {                                                                                                                 
                	if (a[c] >= 9 && a[c] <= 47 || a[c] >= 58 && a[c] <= 64 || a[c] >= 123 && a[c] <= 125)                    
