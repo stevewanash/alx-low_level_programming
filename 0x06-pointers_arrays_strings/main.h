@@ -7,3 +7,4 @@ char *_strcat(char *dest, char *src);
 char *string_toupper(char *a);
 char *cap_string(char *a);
 char *leet(char *); 
+void print_number(int n);
