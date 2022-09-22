@@ -12,7 +12,7 @@
 int _strcmp(char *s1, char *s2)                                                                                           
 {                                                                                                                         
                                                                                                                           
-	int c = 0, sign = 1;                                                                                              
+	int c = 0, sign;                                                                                              
                                                                                                                           
    	while (s2[c] != '\0' && s1[c] != '\0')                                                                            
         {                                                                                                                 
@@ -24,16 +24,23 @@ int _strcmp(char *s1, char *s2)
                      	continue;                                                                                         
                                                                                                                           
                 }                                                                                                         
-                else if (s1[c] > s2[c])                                                                                   
-                     	return (s1[c] - s2[c]);                                                                           
-                                                                                                                          
-              	else                                                                                                      
+                else if (s1[c] > s2[c])
+		{
+			
+                     	return (s1[c] - s2[c]);
+			
+		}                                                                                                         
+              	else if (s2[c] > s1[c])                                                                                                      
                 {                                                                                                         
                                                                                                                           
                       	sign = -1;                                                                                        
                                                                                                                           
                         return (sign * (s2[c] - s1[c]));                                                                  
                                                                                                                           
-                }                                                                                                         
+                }
+		else
+		{
+			return (0);
+		}
         }                                                                                                                 
 }
