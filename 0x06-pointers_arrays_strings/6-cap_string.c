@@ -1,13 +1,13 @@
-#include <stdio.h>                                                                                                          
-                                                                                                                          
+#include <stdio.h>
+
 /**                                                                                                                       
- * cap_string - converts string to uppercase                                                                              
- * @a: string to be converted to uppercase                                                                                
- *                                                                                                                        
- * Return: converted string                                                                                               
- */                                                                                                                       
-char *cap_string(char *a)                                                                                                 
-{                                                                                                                         
+ * cap_string - converts string to uppercase
+ * @a: string to be converted to uppercase
+ *
+ * Return: converted string
+ */
+char *cap_string(char *a)
+{
      	int c = 0;                                                                                                        
         while (a[c] != '\0')                                                                                              
         {                                                                                                                 
