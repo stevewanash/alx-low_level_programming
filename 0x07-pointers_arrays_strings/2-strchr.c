@@ -8,7 +8,7 @@
  * Return: On success, pointer to character in
  * string
  * 0 if character not found
- * 
+ *
  */
 char *_strchr(char *s, char c)
 {
