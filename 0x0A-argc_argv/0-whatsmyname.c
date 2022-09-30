@@ -7,9 +7,9 @@
  *
  * Return: always zero
  */
-int main(argc, argv[])
+int main(int argc, char *argv)
 {
-	printf(argv[0]);
+	printf("%c\n", *argv);
 
 	return (0);
 
