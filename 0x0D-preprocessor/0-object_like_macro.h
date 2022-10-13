@@ -1,5 +1,5 @@
 /**
- * Assigns SIZE a token value
+ * SIZE - a scalar quantity
  */
 
-#define SIZE 124
+#define SIZE 1024
