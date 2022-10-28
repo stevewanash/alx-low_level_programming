@@ -12,6 +12,8 @@ int pop_listint(listint_t **head)
 {
     listint_t *nav;
 
+    int store;
+
     if (*head != NULL)
     {
         nav = *head;
@@ -20,7 +22,11 @@ int pop_listint(listint_t **head)
 
         nav -> next = NULL;
 
-        return (nav -> n);
+        store = nav -> n;
+
+        free (nav);
+
+        return (store);
     }
     else
         return (0);
