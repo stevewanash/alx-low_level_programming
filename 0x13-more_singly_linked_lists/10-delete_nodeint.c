@@ -51,8 +51,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
                         n++;
                     }
-                    nav -> next = NULL;
-
                     tmp -> next = var;
 
                     free (nav);
@@ -62,8 +60,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
                 else
                 {
                     *head = (*head) -> next;
-
-                    nav -> next = NULL;
 
                     free (nav);
 
