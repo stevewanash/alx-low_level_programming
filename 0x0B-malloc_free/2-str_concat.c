@@ -14,15 +14,15 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+    int i;
+
+    int j;
+    
     if (s1 != NULL)
     {
         char *new;
 
         new = malloc(((strlen(s1) + strlen(s2))* sizeof(char)) + sizeof(char));
-
-        int i;
-
-        int j;
 
         i = 0;
 

@@ -12,15 +12,15 @@
  */
 int **alloc_grid(int width, int height)
 {
+    int i;
+
+    int j;
+    
     if (width)
     {
         char **new;
 
         new = malloc(width * height * sizeof(char));
-
-        int i;
-
-        int j;
 
         i = 0;
 
