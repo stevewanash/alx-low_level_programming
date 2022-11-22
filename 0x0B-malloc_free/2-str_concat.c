@@ -20,9 +20,13 @@ char *str_concat(char *s1, char *s2)
 
         new = malloc(((strlen(s1) + strlen(s2))* sizeof(char)) + sizeof(char));
 
-        int i = 0;
+        int i;
 
-        int j = 0;
+        int j;
+
+        i = 0;
+
+        j = 0;
 
         while (s1[i] != NULL)
         {
