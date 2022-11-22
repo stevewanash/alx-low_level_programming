@@ -47,7 +47,11 @@ char *str_concat(char *s1, char *s2)
         if (new != NULL)
             return (new);
         else
+        {
+            free(new);
+
             return (NULL);
+        }
     }
     else
         return (NULL);

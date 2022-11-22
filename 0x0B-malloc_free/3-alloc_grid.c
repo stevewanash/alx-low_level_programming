@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
     {
         int **new;
 
-        new = malloc(width * height * sizeof(char));
+        new = malloc((width * height * sizeof(char)) + (sizeof(char) * height));
 
         i = 0;
 
@@ -40,7 +40,11 @@ int **alloc_grid(int width, int height)
         if (new != NULL)
             return (new);
         else
+        {
+            free(new);
+
             return (NULL);
+        }
     }
     else
         return (NULL);

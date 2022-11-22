@@ -13,7 +13,7 @@
 char *create_array(unsigned int size, char c)
 {
     unsigned int i;
-    
+
     if (size)
     {
         char *new;
@@ -32,7 +32,11 @@ char *create_array(unsigned int size, char c)
         if (new != NULL)
             return (new);
         else
+        {
+            free(new);
+
             return (NULL);
+        }
     }
     else
         return (NULL);
