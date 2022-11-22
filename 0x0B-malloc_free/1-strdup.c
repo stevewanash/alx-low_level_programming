@@ -13,7 +13,7 @@
 char *_strdup(char *str)
 {
     int i;
-    
+
     if (str != NULL)
     {
         char *new;
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
         i = 0;
 
-        while (str[i] != NULL)
+        while (str[i])
         {
             new[i] = str[i];
 
